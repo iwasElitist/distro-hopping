@@ -1,0 +1,27 @@
+set recolor
+set recolor-lightcolor \#fbf1c7
+#set recolor-lightcolor \#0f1117
+set recolor-darkcolor \#0f1117
+#set recolor-darkcolor \#fbf1c7
+
+set default-bg \#0f1117
+
+set guioptions ""
+set page-padding 15
+
+set inputbar-bg \#0f1117
+set inputbar-fg \#fbf1c7
+
+set statusbar-bg \#0f1117
+set statusbar-fg \#fbf1c7
+
+set statusbar-h-padding 10
+set statusbar-v-padding 10
+
+set window-height 700
+set window-width 700
+
+set adjust-open "width"
+
+set highlight-color \#282a36
+set highlight-fg \#fe8019

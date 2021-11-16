@@ -1,0 +1,69 @@
+body {
+    background-color: #0f1117;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bookmark-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 70%;
+    margin: 2em 2em;
+}
+
+.bookmark-container > * {
+    flex: 1 1 25%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        height: auto;
+    }
+    .container > .bookmark-container {
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+    }
+    .bookmark-container > .bookmark-set {
+        width: auto;
+        margin: 1em 1em;
+    }
+}
+
+.bookmark-set{
+    padding: 1em;
+    background-color: #282a36;
+    font-family: "Iosevka Term Extended";
+    font-size: 11px;
+    width: 5rem;
+    height: 5rem;
+    margin: 1em 1em;
+    box-shadow: 5px 5px #fe8019;
+}
+.bookmark-title {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fbf1c7;
+    padding-bottom: 5px;
+}
+.bookmark {
+    text-decoration: none;
+    color: #fbf1c7;
+    display:block;
+    margin: .5em .5em;
+}
+.bookmark-set:hover {
+    position:relative; right: 3px; bottom: 3px;
+    box-shadow: 8px 8px #fe8019;
+}
+

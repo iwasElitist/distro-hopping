@@ -1,8 +1,95 @@
-# distro-hopping
-Stuff that may come in handy...
+# current-setup
 
-I thought of making a git repo where I have all of my files I need in case I distro-hop again.
+git repo to replicate my setup.  
 
-> How original
+## Distros I have used/tried
+- [Pop!_os](https://pop.system76.com/)
+- [Manjaro](https://manjaro.org/)
+- [Arch-Linux](https://archlinux.org/)
+- [Artix-Linux](https://artixlinux.org/)
+- [Void-Linux](https://voidlinux.org/) _(current)_
 
-I know right ?
+### Packages(bloat)
+**You need:**
+
+- tmux
+- picom
+- sxhkd
+- bspwm
+- alacritty
+- rofi
+- qutebrowser
+- deluge
+- feh
+- mpv
+- zathura
+- discord
+- xtools
+
+### Steps: post-install
+
+1. **update Void**
+
+`sudo xbps-install -Syu`
+
+2. **change the mirrors**
+
+`mkdir -p /etc/xbps.d`
+
+`cp /usr/share/xbps.d/<repository>.conf /etc/xbps.d/`
+
+`sed -i 's|https://alpha.de.repo.voidlinux.org|<repository>|g' /etc/xbps.d/<repository>.conf`
+
+3. **install/setup xorg**
+
+`sudo xbps-install -S xorg-minimal`
+
+### Steps: setting up GUI
+
+1. **clone this repository**
+
+`sudo xbps-install -S git`
+
+`git clone https://gitlab.com/iwasElitist/current-setup.git`
+
+2. **install terminal and launcher**
+
+`sudo xbps-install -S alacritty rofi`
+
+3. **install window manager**
+
+`sudo xbps-install -S sxhkd bspwm picom`
+
+4. **setup window manager**
+
+`mkdir -p ~/.config/bspwm/ ~/.config/sxhkd/ ~/.config/picom/`
+
+`cp ~/current-setup/config/bspwm/* ~/.config/bspwm/`
+
+`cp ~/current-setup/config/picom/* ~/.config/picom/`
+
+`cp ~/current-setup/config/sxhkd/* ~/.config/sxhkd/`
+
+5. **install extras**
+
+`sudo xbps-install -S qutebrowser feh mpv...`
+
+6. **install package from source**
+
+`git clone https://github.com/void-linux/void-packages.git`
+
+`cd void-packages`
+
+`./xbps-src binary-bootstrap`
+
+`echo XBPS_ALLOW_RESTRICTED=yes > etc/conf`
+
+`./xbps-src pkg <application>`
+
+`sudo xbps-install -S xtools`
+
+`cd void-packages/masterdir`
+
+`xi <applications>`
+
+**EDIT:**  rip Linus's Pop!_os install(though it was fixable)

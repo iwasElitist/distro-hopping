@@ -1,0 +1,107 @@
+[colors]
+background = #282a36
+foreground = #fbf1c7
+
+[bar/bar1]
+width = 37%
+height = 30
+
+; Gaps for sides
+offset-x = 15
+offset-y = 15
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 4
+border-color = #44475a
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "Iosevka Term Light Extended:size=12;2"
+
+modules-left = bspwm 
+
+;tray-position = right
+;tray-padding = 10
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = pointer
+
+[bar/bar2]
+
+width = 13.5%
+height = 30
+
+offset-x = 1646
+offset-y = 15
+
+border-size = 4
+border-color = #44475a
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 0
+module-margin-right = 0
+
+modules-right = date
+
+;tray-position = left
+;tray-detached = true
+;tray-padding = 10
+
+font-0 = "Iosevka Term Light Extended:size=12;2"
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
+label-focused-foreground = #fe8019
+label-focused-padding = 2
+
+label-occupied = %name%
+label-occupied-foreground = #83a598
+label-occupied-padding = 2
+
+label-urgent = %name%!
+label-urgent-background = #d8d2bf
+label-urgent-padding = 2
+
+label-empty = %name%
+label-empty-foreground = #fbf1c7
+label-empty-padding = 2
+
+; Separator in between workspaces
+label-separator = |
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+date = %d-%m-%Y
+time = %H:%M:%S
+
+label = %date% | %time%
+
+; vim:ft=dosini
