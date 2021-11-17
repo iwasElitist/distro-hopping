@@ -1,4 +1,4 @@
-# current-setup
+# distro-hopping
 
 git repo to replicate my setup.  
 
@@ -50,7 +50,7 @@ git repo to replicate my setup.
 
 `sudo xbps-install -S git`
 
-`git clone https://gitlab.com/iwasElitist/current-setup.git`
+`git clone https://gitlab.com/iwasElitist/distro-hopping.git`
 
 2. **install terminal and launcher**
 
@@ -64,11 +64,11 @@ git repo to replicate my setup.
 
 `mkdir -p ~/.config/bspwm/ ~/.config/sxhkd/ ~/.config/picom/`
 
-`cp ~/current-setup/config/bspwm/* ~/.config/bspwm/`
+`cp ~/distro-hopping/config/bspwm/* ~/.config/bspwm/`
 
-`cp ~/current-setup/config/picom/* ~/.config/picom/`
+`cp ~/distro-hopping/config/picom/* ~/.config/picom/`
 
-`cp ~/current-setup/config/sxhkd/* ~/.config/sxhkd/`
+`cp ~/distro-hopping/config/sxhkd/* ~/.config/sxhkd/`
 
 5. **install extras**
 
