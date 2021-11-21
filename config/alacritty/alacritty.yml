@@ -7,8 +7,8 @@ window:
     y: 10
 
   dimensions:
-    columns: 80
-    lines: 24
+    columns: 100
+    lines: 25
 
 font:
   normal:
@@ -27,7 +27,7 @@ font:
     family: Iosevka Term
     style: Medium Extended Italic
 
-  size: 10.0
+  size: 7.0
 
 colors:
 

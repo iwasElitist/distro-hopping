@@ -140,19 +140,19 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # Set fonts
 c.fonts.default_family = '"Iosevka Term Light Extended"'
-c.fonts.default_size = '10pt'
-c.fonts.completion.entry = '10pt "Iosevka Term Light Extended"'
-c.fonts.debug_console = '10pt "Iosevka Term Light Extended"'
+c.fonts.default_size = '12pt'
+c.fonts.completion.entry = '12pt "Iosevka Term Light Extended"'
+c.fonts.debug_console = '12pt "Iosevka Term Light Extended"'
 c.fonts.prompts = 'default_size "Iosevka Term Light Extended"'
-c.fonts.statusbar = '10pt "Iosevka Term Light Extended"'
-c.fonts.tabs.selected = '10pt "Iosevka Term Light Extended"'
-c.fonts.tabs.unselected = '10pt "Iosevka Term Light Extended"'
+c.fonts.statusbar = '12pt "Iosevka Term Light Extended"'
+c.fonts.tabs.selected = '12pt "Iosevka Term Light Extended"'
+c.fonts.tabs.unselected = '12pt "Iosevka Term Light Extended"'
 
 # Enable dark mode
 # config.set("colors.webpage.darkmode.enabled", True)
 
 # keybinding for video-playback
-config.bind('P', 'hint links spawn vlc {hint-url}')
+config.bind('P', 'hint links spawn mpv --profile=720p {hint-url}')
 
 # Keybinding for status-bar
 config.bind('xs','config-cycle statusbar.show always never')
