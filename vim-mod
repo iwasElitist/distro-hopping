@@ -1,0 +1,22 @@
+# .vim-mod
+# Vim terminal color-changer
+
+DEFAULT_TERM_BG="#0f1117"
+VIM_TERM_BG="#262626"
+
+# Make the color switchable
+
+TERM_SCHEME() {
+ local COLOR="$1"
+ if [ "$TERM" == "xterm-256color" ]; then
+    echo -ne "\\033]11;$COLOR\\007"
+ fi
+}
+
+# Call the variable
+
+VIM() {
+ TERM_SCHEME $VIM_TERM_BG
+ /usr/bin/vim "$@"
+ TERM_SCHEME $DEFAULT_TERM_BG
+}
