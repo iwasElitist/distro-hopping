@@ -4,9 +4,12 @@ git repo to replicate my setup.
 
 ## Distros I have used/tried
 - [Pop!_os](https://pop.system76.com/)
+- [Ubuntu](https://ubuntu.com/)
 - [Manjaro](https://manjaro.org/)
 - [Arch-Linux](https://archlinux.org/)
 - [Artix-Linux](https://artixlinux.org/)
+- [Debian](https://www.debian.org/) _(testing)_
+- [Bedrock](https://bedrocklinux.org/) _(testing)_
 - [Void-Linux](https://voidlinux.org/) _(current)_
 
 ### Packages(bloat)
