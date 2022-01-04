@@ -96,5 +96,3 @@ sudo xbps-install -S xtools
 cd void-packages/masterdir
 xi <applications>
 ```
-
-**EDIT:**  rip Linus's Pop!_os install(though it was fixable)
