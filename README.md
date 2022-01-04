@@ -12,19 +12,19 @@ git repo to replicate my setup.
 ### Packages(bloat)
 **You need:**
 
-- tmux
-- picom
-- sxhkd
-- bspwm
-- alacritty
-- rofi
-- qutebrowser
-- deluge
-- feh
-- mpv
-- zathura
-- discord
-- xtools
+- `tmux`
+- `picom`
+- `sxhkd`
+- `bspwm`
+- `alacritty`
+- `rofi`
+- `qutebrowser`
+- `deluge`
+- `feh`
+- `mpv`
+- `zathura`
+- `discord`
+- `xtools`
 
 ### Steps: post-install
 
