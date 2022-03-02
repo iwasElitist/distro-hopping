@@ -83,8 +83,8 @@ label-occupied = %name%
 label-occupied-foreground = #83a598
 label-occupied-padding = 2
 
-label-urgent = %name%!
-label-urgent-background = #d8d2bf
+label-urgent = %name%
+label-urgent-foreground= #b8bb26
 label-urgent-padding = 2
 
 label-empty = %name%

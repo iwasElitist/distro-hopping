@@ -77,7 +77,7 @@
 
 #element {
     border: 0;
-    padding: 1px;
+    padding: 5px;
 }
 
 #element.normal.normal {

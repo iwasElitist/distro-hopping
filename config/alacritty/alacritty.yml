@@ -7,27 +7,27 @@ window:
     y: 10
 
   dimensions:
-    columns: 100
-    lines: 25
+    columns: 115
+    lines: 28
 
 font:
   normal:
-    family: Iosevka Term
+    family: Iosevka Term Light
     style: Light Extended 
 
   bold:
-    family: Iosevka Term
-    style: Medium Extended
+    family: Iosevka Term Extended
+    style: Bold Extended
   
   italic:
-    family: Iosevka Term
-    style: Light Extended Italic
+    family: Iosevka Term Extended
+    style: Extended Italic
 
   bold_italic:
-    family: Iosevka Term
-    style: Medium Extended Italic
+    family: Iosevka Term Extended
+    style: Bold Extended Italic
 
-  size: 7.0
+  size: 7.5
 
 colors:
 

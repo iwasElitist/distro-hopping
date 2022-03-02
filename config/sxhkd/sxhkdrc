@@ -4,23 +4,29 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	alacritty > /dev/null 2>&1
 
 # web browser
 super + {b}
-	qutebrowser	
+	qutebrowser > /dev/null 2>&1
 
 # program launcher
 super + @space
-	rofi -modi drun -show drun
-
-# window checker
-super + {r}
-	rofi -modi window -show window 
+	rofi -modi drun -show drun > /dev/null 2>&1
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# Take a screenshot
+Print
+	scrot -e 'mv $f ~/Pictures/Screenshots/'; \
+	dunstify "Screenshot taken"
+
+# Take a screenshot using selection
+alt + Print
+	scrot -s -d 1 -e 'mv $f ~/Pictures/Screenshots/'; \
+	dunstify "Screenshot taken"
 
 #
 # bspwm hotkeys
