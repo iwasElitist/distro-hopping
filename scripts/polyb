@@ -1,2 +1,2 @@
-#!/bin/sh
+#! /bin/sh
 sleep 1; $HOME/.config/polybar/launch.sh
