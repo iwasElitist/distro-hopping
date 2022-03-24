@@ -10,4 +10,5 @@ source $HOME/.config/nvim/general/buffers.vim
 " Source your themeing configs
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/themes/indentline.vim
+source $HOME/.config/nvim/themes/startify.vim
 

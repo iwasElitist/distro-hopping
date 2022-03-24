@@ -1,8 +1,8 @@
 set recolor
-set recolor-lightcolor \#fbf1c7
-#set recolor-lightcolor \#0f1117
-set recolor-darkcolor \#0f1117
-#set recolor-darkcolor \#fbf1c7
+# set recolor-lightcolor \#fbf1c7
+set recolor-lightcolor \#0f1117
+# set recolor-darkcolor \#0f1117
+set recolor-darkcolor \#fbf1c7
 
 set default-bg \#0f1117
 

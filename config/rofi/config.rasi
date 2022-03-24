@@ -33,7 +33,7 @@
 
 #window {
     background-color: @background;
-    border: 4;
+    border: 5;
     padding: 10;
 }
 

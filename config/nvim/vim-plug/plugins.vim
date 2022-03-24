@@ -8,17 +8,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
-    " Gruvbox theme
-    Plug 'morhetz/gruvbox'
-    " Airline theme
-    Plug 'vim-airline/vim-airline'
-    " Indent lines
-    Plug 'Yggdroot/indentLine'
+    Plug 'sheerun/vim-polyglot'     " Better Syntax Support
+    Plug 'scrooloose/NERDTree'      " File Explorer
+    Plug 'jiangmiao/auto-pairs'     " Auto pairs for '(' '[' '{'
+    Plug 'morhetz/gruvbox'          " Gruvbox theme
+    Plug 'vim-airline/vim-airline'  " Airline theme
+    Plug 'Yggdroot/indentLine'      " Indent lines
+    Plug 'mhinz/vim-startify'       " Change startpage
     
 call plug#end()
